@@ -1,0 +1,33 @@
+main {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.loading {
+    font-family: "Raleway", sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Press Start 2P', cursive;
+}
+
+.loading > div >h1 {
+    font-size: 4em;
+    animation: fade 3s cubic-bezier(.48, .01, .61, .97) forwards infinite;
+    margin: 1vh 0;
+    opacity: 0;
+}
+
+@keyframes fade {
+
+    0%,
+    100% {
+        opacity: 0.05;
+    }
+
+    50% {
+        opacity: 1;
+    }
+}

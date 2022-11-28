@@ -1,0 +1,314 @@
+/*
+-------------------------------------------------
+General CSS for the Inventory page
+-------------------------------------------------
+ */
+.Background {
+  background-image: url("../images/tavern.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+.Inventory-Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  /* height: 100%; */
+}
+.image {
+  width: 50px;
+  height: 50px;
+}
+.Top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-left: 25px;
+  margin-right: 25px;
+  width: 133vh;
+  /* height: 100%; */
+}
+.Bottom{
+  min-height: 810px;
+}
+.stat-column-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: -9%;
+  width: 100%;
+  height: 75%;
+}
+.stat-Buttons {
+  width: 100%;
+}
+.stat-Buttons2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.align-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.stat-split-titles {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+/*
+-------------------------------------------------
+Equipped Area Styles
+-------------------------------------------------
+ */
+.Equipped-Section {
+  display: flex;
+  flex-direction: column;
+  width: 600px;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: .92;
+  margin-top: 1%;
+  margin-left: 1%;
+  margin-right: 1%;
+  border-radius: 25px;
+}
+.Equipped-Header {
+  width: 570px;
+  border-radius: 25px;
+}
+
+.Equipped-Tab {
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 300px;
+  height: inherit;
+}
+
+.Equipped-Item-Container {
+  display: flex;
+  flex-direction: row;
+  width: 90%;
+  background-color: whitesmoke;
+  margin: 10px;
+  height: 64px;
+  border-radius: 15px;
+  box-shadow: 0 0 5px gray;
+}
+.Equipped-Item-Information {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  height: 90%;
+  margin-left: 10px;
+  
+}
+.Unequip-Button {
+  width: 90%;
+  height: 100%;
+  background-color: whitesmoke;
+  border-radius: 5px;
+}
+.Equipped-Title {
+  text-align: center;
+}
+
+/*
+-------------------------------------------------
+Stats Area Styles
+-------------------------------------------------
+ */
+.Stats-Section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 600px;
+  height: 570px;
+  background-color: rgb(220, 205, 205);
+  margin-top: 10px;
+  border-radius: 25px;
+}
+.Stats-Information-Container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border-radius: 25px;
+}
+.Stats-Add-Container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(154, 151, 151);
+  border-radius: 5px 5px 25px 25px;
+}
+.player-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+  margin-left: 10px;
+}
+.player-stats {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 60%;
+  height: 100%;
+  margin: 0px;
+}
+.player-stats-window {
+  text-align: start;
+  margin-left: 20px;
+}
+.point-upgrade-title {
+  text-align: left;
+  margin-left: 20px;
+}
+
+/*
+-------------------------------------------------
+Inventory Area Styles
+-------------------------------------------------
+ */
+.Inventory-Section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 133vh;
+  height: 100%;
+  background-color: white;
+  margin-top: 10px;
+}
+.Inventory-Section-columns {
+  display: flex;
+  flex-direction: row;
+  align-items: left;
+  justify-content: left;
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+}
+.inventoryCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 250px;
+  border-color: black;
+  border-radius: 25px;
+  background-color: rgb(201, 223, 255);
+  box-shadow: 0 0 10px gray;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+.inventoryCard_Equippable {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 200px;
+  height: 250px;
+  border-color: black;
+  border-radius: 25px;
+  background-color: rgb(150, 143, 143);
+  box-shadow: 0 0 10px gray;
+}
+.inventoryCard-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.inventoryCard-body-seperation {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.sell-Button {
+  margin-top: 2vh;
+  width: 5vh;
+  background-color: rgb(225, 11, 11);
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+  padding-right: 15px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 50px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.equip-Button {
+  width: 6vh;
+  background-color: rgb(9, 203, 9);
+}
+.Inventory-Display {
+  display: grid;
+  grid-template-columns: repeat(3, 0.25fr);
+  grid-column-gap: 25px;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  width: 100%;
+  height: 810px;
+  padding-left: 25px;
+}
+.Inventory-Section-Search {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: inherit;
+  justify-content: left;
+  align-items: left;
+}
+.Inventory-Section-Search-Filter {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.GroupedSearchBarFilter {
+  background-color: gray;
+  min-width: 200px;
+  width: 1%;
+  justify-content: left;
+  align-items: left;
+  border-radius: 0 10px 10px 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.Inventory-PageControls {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: inherit;
+}

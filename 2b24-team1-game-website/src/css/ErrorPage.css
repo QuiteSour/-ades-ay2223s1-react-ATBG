@@ -1,0 +1,41 @@
+/* Error Screens Styles */
+.errorScreen {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #383D3B;
+    color: white;
+    font-family: "Raleway", sans-serif;
+}
+
+.errorScreen > h1 {
+    font-size: 9em;
+    margin: 0;
+    padding: 0;
+}
+
+.errorScreen > h2 {
+    font-size: 2em;
+    margin: 0;
+    padding: 0;
+}
+
+/* Button Style */
+.errBtn {
+    width: 7vw;
+    height: 6.5vh;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 2vh;
+    border-radius: 5px;
+    border-style: none;
+    color: #2a484c;
+    background-color: #92DCE5;
+}
+
+.errBtn:hover {
+    background-color: #7dbcc5;
+}

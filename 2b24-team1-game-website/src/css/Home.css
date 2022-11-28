@@ -1,0 +1,100 @@
+/* Section Styles */
+section {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+/* Container Styles */
+.top-half {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url('../images/valley.jpg') no-repeat;
+    background-size: cover;
+}
+
+.intro-container {
+    display: flex;
+    flex-direction: column;
+    width: 60vw;
+    height: 100%;
+    align-items: center;
+}
+
+.scroll-down {
+    position: relative;
+    top: 25vh;
+    color: white;
+    text-align: center;
+}
+
+/* Header Style */
+.home-header {
+    position: relative;
+    top: 9vh;
+    height: 60vh;
+    text-align: center;
+    color: white;
+}
+
+.intro-container>.home-header>h1 {
+    margin: 0;
+    padding: 0;
+    font-size: 3em;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.scroll-down>h2 {
+    font-size: 1em;
+    margin: 0;
+    font-weight: normal;
+}
+
+/* Button Style */
+.login-redirect {
+    width: 16vw;
+    height: 9vh;
+    font-size: 1.7em;
+    font-weight: normal;
+    margin: 5vh 0;
+    border-radius: 5px;
+    border-style: none;
+    color: #2a484c;
+    background-color: #92DCE5;
+}
+
+.login-redirect:hover {
+    background-color: #7dbcc5;
+}
+
+/* Icon Style */
+.custom-down {
+    text-align: center;
+    font-size: 1.7em;
+}
+
+/* ID Styling */
+#home-bird-logo {
+    width: 20vw;
+    height: 40vh;
+    margin: 3vh 0;
+}
+
+/* Animation */
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+.fade-in {
+    animation: fade-in 1.5s cubic-bezier(.79, .19, .87, .57);
+}

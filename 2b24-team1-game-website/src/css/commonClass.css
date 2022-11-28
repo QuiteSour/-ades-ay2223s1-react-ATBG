@@ -1,0 +1,759 @@
+@charset "utf-8";
+
+@media only screen and (max-width: 600px) {
+}
+
+@media only screen and (min-width: 600px) and (max-width: 768px) {
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+}
+
+@media only screen and (min-width: 1200px) {
+}
+
+.background-box {
+  background-image: url(../images/greenerforest.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+  z-index: 1;
+}
+
+/* Flexible Classes */
+/* ================================================================================== */
+/* Flexible ID */
+#rewardsBox {
+  height: 90%;
+}
+
+#enemy_stat {
+  border: #111;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  z-index: 3;
+  padding: 2%;
+  background-color: rgba(236, 226, 226, 0.6);
+}
+
+#player_stat {
+  border: #111;
+  border-style: solid;
+  border-radius: 5px;
+  border-width: 1px;
+  z-index: 3;
+  padding: 2%;
+  background-color: rgba(236, 226, 226, 0.6);
+}
+
+#combatBox {
+  border-left-width: 0.5%;
+  border-left-style: solid;
+  border-left-color: #212529;
+  border-right-width: 0.5%;
+  border-right-style: solid;
+  border-right-color: #212529;
+  background-image: url(../images/forest_2.jpeg);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+/* ================================================================================== */
+
+/*  */
+/* Workspace */
+
+/* Use these for varying nice looking screen sizes */
+@media (max-width: 600px) {
+  #topnav > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  #topnav > ul > li {
+    margin: 0;
+    padding: 0;
+  }
+  #topnav a.login-stuff,
+  #topnav a.notlogin-stuff {
+    display: block;
+    position: relative;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1.1em 1.1em;
+    font-weight: normal;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  .icon {
+    height: 80%;
+    width: 10%;
+  }
+  #event-description {
+    top: 100px;
+    height: 300px;
+  }
+  #event-button {
+    top: 550px;
+    height: 350px;
+  }
+  #makemove {
+    width: 80%;
+    height: 35%;
+    border: none;
+    border-radius: 0.45rem;
+    font-size: 1.5em;
+    box-shadow: none;
+    outline: none;
+  }
+  #commence_battle {
+    top: 5%;
+    height: 20%;
+    border: none;
+    border-radius: 0.45rem;
+    font-size: 2em;
+    box-shadow: none;
+    outline: none;
+  }
+  #gameBox1 {
+    height: 1600px;
+  }
+  .sideBoxes {
+    display: none;
+  }
+  #player_stat {
+    width: 70%;
+  }
+  #enemy_stat {
+    height: 10%;
+    width: 35%;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 768px) {
+  #topnav > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  #topnav > ul > li {
+    margin: 0;
+    padding: 0;
+  }
+  #topnav a.login-stuff,
+  #topnav a.notlogin-stuff {
+    display: block;
+    position: relative;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1.1em 1.1em;
+    font-weight: normal;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
+  .icon {
+    height: 80%;
+    width: 10%;
+  }
+  #event-description {
+    top: 100px;
+    height: 450px;
+  }
+  #event-button {
+    top: 550px;
+    height: 250px;
+  }
+  #makemove {
+    width: 70%;
+    height: 45%;
+    border: none;
+    border-radius: 0.45rem;
+    font-size: 1.5em;
+    box-shadow: none;
+    outline: none;
+  }
+  #commence_battle {
+    top: 5%;
+    height: 20%;
+    border: none;
+    border-radius: 0.45rem;
+    font-size: 2em;
+    box-shadow: none;
+    outline: none;
+  }
+  #gameBox1 {
+    height: 2000px;
+  }
+  .sideBoxes {
+    display: none;
+  }
+  #player_stat {
+    width: 60%;
+  }
+  #enemy_stat {
+    height: 10%;
+    width: 35%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+  #topnav > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  #topnav > ul > li {
+    margin: 0;
+    padding: 0;
+  }
+  #topnav a.login-stuff {
+    float: right;
+    display: block;
+    position: relative;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1.1em 1.1em;
+    font-weight: normal;
+    font-size: 2em;
+    text-decoration: none;
+  }
+  #topnav a.notlogin-stuff {
+    float: left;
+    display: block;
+    position: relative;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1.1em 1.1em;
+    font-weight: normal;
+    font-size: 2em;
+    text-decoration: none;
+  }
+  .icon {
+    height: 10%;
+  }
+  #event-description {
+    top: 100px;
+    height: 450px;
+  }
+  #event-button {
+    top: 750px;
+    height: 200px;
+  }
+  #makemove {
+    width: 30%;
+    height: 60%;
+    border: none;
+    border-radius: 0.45rem;
+    font-size: 1.5em;
+    box-shadow: none;
+    outline: none;
+  }
+  #commence_battle {
+    top: 5%;
+    height: 20%;
+    border: none;
+    border-radius: 0.45rem;
+    font-size: 2em;
+    box-shadow: none;
+    outline: none;
+  }
+  #gameBox1 {
+    height: 1000px;
+  }
+  .sideBoxes {
+    display: none;
+  }
+  #player_stat {
+    width: 50%;
+  }
+  #enemy_stat {
+    height: 10%;
+    width: 35%;
+  }
+}
+
+@media (min-width: 992px) and (max-width: 1200px) {
+  #topnav > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  #topnav > ul > li {
+    margin: 0;
+    padding: 0;
+  }
+  #topnav a.login-stuff {
+    display: block;
+    position: relative;
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1.1em 1.1em;
+    font-weight: normal;
+    font-size: 2em;
+    text-decoration: none;
+  }
+  #topnav a.notlogin-stuff {
+    position: relative;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1.1em 1.1em;
+    font-weight: normal;
+    font-size: 2em;
+    text-decoration: none;
+  }
+  #event-description {
+    top: 100px;
+    height: 300px;
+  }
+  #event-button {
+    top: 550px;
+    height: 200px;
+  }
+  #makemove {
+    width: 30%;
+    height: 60%;
+    border: none;
+    border-radius: 0.45rem;
+    font-size: 1.5em;
+    box-shadow: none;
+    outline: none;
+  }
+  #commence_battle {
+    top: 5%;
+    height: 20%;
+    border: none;
+    border-radius: 0.45rem;
+    font-size: 2em;
+    box-shadow: none;
+    outline: none;
+  }
+  #gameBox1 {
+    display: flex;
+    height: 880px;
+  }
+  .sideBoxes {
+    display: block;
+    flex: 1;
+  }
+  #player_stat {
+    width: 50%;
+  }
+  #enemy_stat {
+    height: 15%;
+    width: 35%;
+  }
+}
+
+@media (min-width: 1200px) {
+  #topnav > ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  #topnav > ul > li {
+    margin: 0;
+    padding: 0;
+  }
+  #topnav a.login-stuff {
+    display: block;
+    position: relative;
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1.1em 1.1em;
+    font-weight: normal;
+    font-size: 1.75em;
+    text-decoration: none;
+  }
+  #topnav a.notlogin-stuff {
+    position: relative;
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 1.1em 1.1em;
+    font-weight: normal;
+    font-size: 1.75em;
+    text-decoration: none;
+  }
+  #event-description {
+    top: 160px;
+    height: 300px;
+  }
+  #event-button {
+    top: 640px;
+    height: 200px;
+  }
+  #makemove {
+    width: 30%;
+    height: 60%;
+    border: none;
+    border-radius: 0.45rem;
+    font-size: 1.5em;
+    box-shadow: none;
+    outline: none;
+  }
+  #commence_battle {
+    top: 5%;
+    height: 20%;
+    border: none;
+    border-radius: 0.45rem;
+    font-size: 2em;
+    box-shadow: none;
+    outline: none;
+  }
+  #gameBox1 {
+    display: flex;
+    height: 100%;
+  }
+  .sideBoxes {
+    display: block;
+    flex: 1;
+  }
+  #player_stat {
+    width: 50%;
+    height: 110%;
+  }
+  #enemy_stat {
+    height: 15%;
+    width: 35%;
+  }
+}
+
+#topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+#topnav a.active {
+  background-color: #520de7;
+  color: white;
+}
+
+#topnav a:hover {
+  background-color: #3c10d9;
+  color: white;
+}
+
+#dropdown-button {
+  width: 100%;
+  height: auto;
+  font-size: 3em;
+  padding: 2.5% 2.5%;
+  background-color: #333;
+  outline: none;
+}
+
+#event-description {
+  transition: 1s;
+}
+
+/* ---------------------------------------------------------------------------------- */
+
+.bold-txt-large {
+  font-size: 2.25em;
+  font-weight: lighter;
+}
+.bold-txt-medium {
+  font-size: 1.5em;
+  font-weight: lighter;
+}
+.bold-txt-small {
+  font-size: 1.1rem;
+  font-weight: lighter;
+}
+.thin-txt-large {
+  font-size: 3em;
+  font-weight: lighter;
+}
+
+.health_bar {
+  height: 5%;
+  width: 30%;
+  background-color: tomato;
+}
+
+.progress {
+  border-radius: 5px;
+  border-width: 0.1px;
+  border-color: #212529;
+  border-style: solid;
+  background-color: #f1f1f1;
+  height: 3%;
+}
+.progressingBar {
+  border-radius: inherit;
+  width: 1%;
+  height: 100%;
+  background-color: #04aa6d;
+}
+
+#enemyProgress {
+  background-color: #cf1616;
+}
+
+#player_health_show {
+  background-color: #52dee5;
+  height: 100%;
+  width: 100%;
+}
+
+#player_health {
+  padding: 0;
+  margin: 0;
+}
+
+.thinGreyBorder {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #212529;
+}
+
+#enemy_health_show {
+  background-color: #52dee5;
+  height: 100%;
+  width: 100%;
+}
+
+#enemy_health {
+  padding: 0;
+  margin: 0;
+}
+
+#playerFlexBox {
+  height: 10%;
+}
+
+.label-color {
+  color: white;
+  font-size: 30px;
+}
+/* ---------------------------------------------------------------------------------- */
+
+/* Testing CSS */
+.bg-dark {
+  background-color: #7c7c7c;
+}
+
+.bg-dark2 {
+  background-color: #9d9d9d;
+}
+
+.bg-pink {
+  background-color: pink;
+}
+
+.bg-cancer {
+  background-color: tomato;
+}
+
+.stat_box {
+  position: relative;
+  align-self: center;
+  padding: 10px;
+  border-radius: 15px;
+  border-style: solid;
+  border-color: #007bff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 50%;
+  top: 25px;
+}
+
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 5%;
+  z-index: 2;
+}
+
+.sidenav a {
+  padding: 1% 2% 2% 2%;
+  text-decoration: none;
+  font-size: 3em;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav a.activearea {
+  background-color: rgb(22, 42, 221);
+  color: #f1f1f1;
+}
+
+.closebtn {
+  position: relative;
+  top: 0;
+  right: 25px;
+  margin-left: 50px;
+  float: right;
+  font-weight: bolder;
+}
+
+.sideSelect {
+  font-size: 2em;
+  color: #fff;
+  float: right;
+  right: 0;
+  font-weight: bolder;
+  height: 10%;
+  width: 5%;
+  border-radius: 1% 0% 0% 20%;
+  border: none 1%;
+  background-color: #3b3048;
+  transition: 0.2s;
+}
+
+.sideSelect:hover {
+  background-color: #1f46f8;
+}
+
+.sideSelect:active {
+  background-color: #1f35f8;
+}
+
+#enemy_name {
+  position: relative;
+  width: 300px;
+  height: 250px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
+  word-wrap: break-word;
+  cursor: pointer;
+  user-select: none;
+  transition: 0.1s;
+}
+
+#makemove {
+  transition: 0.2s;
+}
+
+#makemove:hover {
+  background-color: #4798f0;
+}
+
+#makemove:disabled {
+  background-color: #1f46f8;
+  opacity: 75%;
+}
+
+#commence_battle:hover,
+#rewardsButton:hover {
+  opacity: 70%;
+}
+
+#commence_battle,
+#rewardsButton {
+  transition: 0.3s;
+}
+
+.faded-background {
+  opacity: 50%;
+  background-color: #111;
+}
+
+#enemyImg {
+  width: 250px;
+  height: auto;
+  user-select: none;
+}
+
+/* Animation */
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+.fade-in {
+  animation: fade-in 1.5s cubic-bezier(0.79, 0.19, 0.87, 0.57);
+}
+
+.fade-fast {
+  animation: fade-in 0.25s cubic-bezier(0.79, 0.19, 0.87, 0.57);
+}
+
+/* Animation  */
+@keyframes takeDamage {
+  0% {
+    background-color: transparent;
+  }
+
+  50% {
+    background-color: rgba(255, 0, 0, 0.375);
+  }
+
+  100% {
+    background-color: transparent;
+  }
+}
+
+.takeDamage-in {
+  animation: takeDamage 0.1s cubic-bezier(0.79, 0.19, 0.87, 0.57);
+}
+
+/* #enemy_name:active {
+  background-color: rgba(255, 0, 0, 0.375);
+} */
+
+.hit_img {
+  background-size: 100% 100%;
+  user-select: none;
+  animation: hitAnim 0.25s cubic-bezier(0.79, 0.19, 0.87, 0.57);
+}
+
+@keyframes hitAnim {
+  0% {
+    background-image: url(../images/FX003_01.png);
+  }
+
+  20% {
+    background-image: url(../images/FX003_02.png);
+  }
+
+  40% {
+    background-image: url(../images/FX003_03.png);
+  }
+
+  60% {
+    background-image: url(../images/FX003_04.png);
+  }
+
+  80% {
+    background-image: url(../images/FX003_05.png);
+  }
+  100% {
+    background-image: none;
+  }
+}
+
+#eDiv {
+  user-select: none;
+}

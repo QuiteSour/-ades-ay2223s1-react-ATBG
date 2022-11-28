@@ -1,0 +1,143 @@
+/* Main Body Style */
+main {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: "Raleway", sans-serif;
+}
+
+/*===========================================================*/
+/*                      Login Screen                         */
+/*===========================================================*/
+.login-reg {
+    display: flex;
+    background: linear-gradient(rgba(37, 36, 36, 0.4), rgba(0, 0, 0, 0.4)), url('../images/forest.jpg') no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container Style */
+.login-container {
+    width: 30vw;
+    height: 60vh;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    /* Add some shadow */
+}
+
+/* Header Style */
+.login-container>h1 {
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 4em;
+}
+
+/* Form Style */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input[type=text] {
+    width: 23vw;
+    height: 4.5vh;
+    margin: 2vh 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 1.3em;
+}
+
+input[type=password] {
+    width: 23vw;
+    height: 4.5vh;
+    margin: 2vh 0;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border-style: none;
+    font-size: 1.3em;
+}
+
+input[type=text]:focus {
+    box-shadow: 0 3px 9px 0 rgba(255, 255, 255, 0.2), 0 5px 10px 0 rgba(255, 255, 255, 0.1);
+    outline: none;
+}
+
+input[type=password]:focus {
+    box-shadow: 0 3px 9px 0 rgba(255, 255, 255, 0.2), 0 5px 10px 0 rgba(255, 255, 255, 0.1);
+    outline: none;
+}
+
+/* Button Style */
+.login-reg-btn {
+    width: 7vw;
+    height: 6.5vh;
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-top: 2vh;
+    border-radius: 5px;
+    border-style: none;
+    color: #2a484c;
+    background-color: #92DCE5;
+}
+
+.login-reg-btn:hover {
+    background-color: #7dbcc5;
+}
+
+
+/* Link Style */
+.reg-link {
+    margin: 4vh 0;
+    text-align: center;
+}
+
+.reg-link>p {
+    margin: 1vh 0;
+    font-size: 1.3em
+}
+
+.reg-link>a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.reg-link>a:hover {
+    text-decoration: underline;
+}
+
+/*===========================================================*/
+/*                      Register Screen                      */
+/*===========================================================*/
+/* Container Style */
+.reg-container {
+    width: 40vw;
+    height: 65vh;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+}
+
+/* Header Style */
+.reg-header-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+/* X Icon Style */
+.reg-header-row>i {
+    font-size:2em;
+    margin: 2vh 1vw;
+    cursor: pointer;
+}
+
+.reg-header-row>h1 {
+    margin: 2.7vh 1.7vw;
+    letter-spacing: 1px;
+    font-size: 3.4em;
+}
